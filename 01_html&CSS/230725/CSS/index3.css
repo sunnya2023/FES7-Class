@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+body,
+h1,
+h2,
+p,
+ul,
+button{
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    font:inherit;
+}
+
+button{
+    border: 0;
+    background: none;
+    font:inherit;
+}
+button:enabled{
+    cursor: pointer;
+   font:inherit;
+}
+
+img{
+    vertical-align: top;
+}
+
+*{
+    font:'SpoqaHanSansNeo-Regular';
+}
+
+.container{
+width: 520px;
+border-radius: 10px;
+border: 1px solid  #C4C4C4;
+background: #FFF;
+margin: 0 auto;
+}
+
+.title{
+   border-bottom: 1px solid #C4C4C4 ;
+   width: 100%;
+}
+.title p{
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+margin: 20px 188px;
+}
+
+
+.sns-list li{
+     width: 472px;
+    height: 50px;
+    margin: 29px 24px 10px;
+    border-radius: 5px;
+border: 1px solid #767676;
+background: #FFF;
+
+display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    text-align: center; 
+}
+.sns-list li img{
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+}
+
+.sns-list .sns{
+color: #767676;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+
+}
+
+
+/*
+
+.bg-icon_kakao {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png')  -20px -20px;
+}
+
+
+.bg-icon_naver {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -82px -20px;
+}
+
+.bg-icon_google {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -20px -82px;
+
+
+.bg-icon_facebook {
+    width: 13px; height: 24px;
+    background: url('css_sprites.png')-144px -20px;
+}
+
+*/
+
+/* 쌤 코드 참조  */
+[class^="icon"]::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url('images_login/icon_sprites_retina.png');
+    background-size: 117px 84px;
+}
+
+.link-sns-login.icon-facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.link-sns-login.icon-naver {
+    border: 1px solid #00BF18;
+}
+
+.link-sns-login.icon-kakao {
+    border: 1px solid #F2C94C;
+}
+
+.icon-google::before {
+    width: 22px;
+    height: 22px;
+    background-position: -52px -10px;
+    /* background: url("images_login/icon_google.png") no-repeat; */
+}
+
+.icon-naver::before {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -10px;
+    /* background: url("images_login/icon_naver.png") no-repeat; */
+}
+
+.icon-kakao::before {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -52px;
+    /* background: url("images_login/icon_kakao.png") no-repeat; */
+}
+
+.icon-facebook::before {
+    height: 24px;
+    width: 13px;
+    background-position: -93px -10px;
+
+    /* background: url("images_login/icon_facebook.png") center no-repeat; */
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <label for="lunch">오늘의 점심</label>
+    <select name="lunch" id="lunch">
+        <option value="lunch1">햄버거</option>
+        <option value="lunch2">김밥</option>
+        <option value="lunch3">피자</option>
+    </select>
+
+    <br>
+    <label>
+        좋아하는 아이스크림
+        <input list="ice-cream-flavors">
+        <datalist id="ice-cream-flavors">
+            <option value="스크류바">
+            <option value="빵또아">
+            <option value="빙빙바">
+            <option value="월드콘">
+            <option value="바밤바">
+        </datalist>
+    </label>
+    <br>
+    <div>
+        <label for="user-front">여러분이 제일 자신있는 프론트엔드 기술을 선택해주세요</label>
+        <select id="user-front" name="user-tech">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+            <option value="typescript">TypeScript</option>
+            <option value="sql" disabled>SQL</option>
+        </select>
+    </div>
+    <div>
+        <label for="user-tech">여러분이 사용해본 기술을 모두 선택해주세요</label>
+        <select id="user-tech" name="user-tech" multiple size="5">
+            <optgroup label="front-end">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="react">React</option>
+                <option value="typescript">TypeScript</option>
+            </optgroup>
+            <optgroup label="back-end">
+                <option value="nodejs">Node.js</option>
+                <option value="java">JAVA</option>
+                <option value="python">Python</option>
+                <option value="django">Django</option>
+            </optgroup>
+        </select>
+    </div>
+</body>
+
+</html>

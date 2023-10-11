@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        let s = new Set('abcdeeeeeeeee');
+        s  //Set(5) {'a', 'b', 'c', 'd', 'e'}
+
+        let ss = new Set('abcdeeeeeeeee'.split(''));
+        'abcdeeeeeeeee'.split('') // ['a', 'b', 'c', 'd', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e']
+        ss.has('s') //false
+
+        let a = new Set('abc') // {'a', 'b', 'c'}
+        let b = new Set('cde') //{'c', 'd', 'e'}
+        // [...a] 하면 ['a', 'b', 'c'] 배열로 바뀜
+        //교집합
+        const cross = [...a].filter((value) => {
+            return b.has(value)
+        })
+        cross // ['c']
+
+        //병합(합집합) concat
+        const union = new Set([...a].concat([...b])); //{'a', 'b', 'c', 'd', 'e'}
+
+        //차집합
+        let dif = [...a].filter((value) => {
+            return !b.has(value)
+        }); //['a', 'b']
+
+
+        //set으로 로또 만들기
+        function lottoGenerator() {
+            // const lottArr/// = []
+            const lottoSet = new Set()
+
+            //while (lottArr.length < 6) {
+            while (lottoSet.size < 6) {
+                const result = parseInt(Math.random() * 45 + 1)
+                //if (!lottArr.includes(result)) {
+                //  lottArr.push(result)
+                //}
+                lottoSet.add(result)
+
+            }
+            //return lottArr
+            return lottoSet
+        }
+        console.log(lottoGenerator())
+
+    </script>
+</body>
+
+</html>

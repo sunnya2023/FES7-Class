@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        //parse : 문자를 객체로
+        const json = '{"result":true, "count":42}'
+        const obj = JSON.parse(json)
+        console.log(obj)   //{result: true, count: 42}
+
+        //parse : 문자를 배열로
+        const json2 = '[1,2,3]'
+        const arr = JSON.parse(json2)
+        console.log(arr)  //[1, 2, 3]
+
+        const json3 = '[1,2,[1,2,3]]'
+        const arr1 = JSON.parse(json3)
+        console.log(arr1)  //[1, 2, Array(3)]
+
+        //strigfy : 객체를 문자열로
+        const obj4 = { result: true, count: 42 }
+        const json4 = JSON.stringify(obj4)
+        console.log(json4) //{"result":true,"count":42}
+
+        //깊은 복사 
+        //전개구문 사용해도 완전한 복사 불가능
+        const obj5 = { one: 1, two: { three: 3 } }
+        const obj6 = { ...obj5 }
+        obj6.two.three = 10  //obj5와 obj6도 다 같이 바껴버림
+
+        //JSON을 이용한 깊은 복사
+        let l = { ten: 10, twenty: 20, thirty: { forty: 40 } };
+        let a = JSON.parse(JSON.stringify(l));
+        a[0] = 1000;
+        a.thirty.forty = 100
+
+        //structured clone 
+        //링크 : https://developer.mozilla.org/ko/docs/Web/API/structuredClone
+        let m = { ten: 10, twenty: 20, thirty: { forty: 40 } };
+        let n = structuredClone(m)
+        n.thirty.forty = 100
+    </script>
+</body>
+
+</html>

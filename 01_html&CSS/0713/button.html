@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .btn-box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .btn {
+            width: 88px;
+            height: 32px;
+            background-color: #3A4556;
+            color: var(--dark-text-2-cbd-5-df, #CBD5DF);
+            text-align: center;
+            font-family: 'Pretendard-Regular';
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid #1A202C;
+            box-shadow: -1px -5px 10px #4A5568 inset;
+        }
+
+        .hover:hover {
+            color: #FFF;
+            text-decoration-line: underline;
+        }
+
+        .active:active {
+            color: #FFF;
+            text-decoration-line: underline;
+        }
+
+        .dis:disabled {
+            color: var(--dark-bg-54-a-5568, #4A5568);
+            text-align: center;
+            font-family: Pretendard;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .yes-box {
+            width: 88px;
+            height: 32px;
+            color: var(--point-439-aff, #439AFF);
+            text-align: center;
+            font-family: 'Pretendard-Regular';
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .yes {
+            color: var(--point-439-aff, #439AFF);
+            background: #3A4556;
+        }
+
+        .yes.hover:hover {
+            color: var(--dark-text-1-fefefe, #FEFEFE);
+            background: #439AFF;
+            border: none;
+            text-decoration-line: underline;
+        }
+
+        .yes.active:active {
+            color: var(--dark-text-1-fefefe, #FEFEFE);
+            background: #439AFF;
+            border: none;
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-box">
+        <button class="btn ">Button</button>
+        <button class="btn hover">Button</button>
+        <button class="btn active">Button</button>
+        <button class="btn dis">Button</button>
+    </div>
+
+    <div class="yes-box">
+        <button class="yes">Yes</button>
+        <button class="yes hover">Yes</button>
+        <button class="yes active">Yes</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>버튼 만들기</title>
+    <style>
+        p {
+            margin: 0;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 32px;
+            background-color: #343F50;
+            border: 5px solid #000;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .box1 p {
+            border: 5px solid #4a5568;
+            border-width: 5px 0 0 5px;
+            height: 100%;
+            padding: 20x 0;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 44px;
+            background-color: #343F50;
+            border: 5px solid #000;
+            color: white;
+            text-align: center;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+
+        /* 태그 하나로 : outline */
+        .box3 {
+            width: 100px;
+            height: 44px;
+            background-color: #343F50;
+
+            color: white;
+            text-align: center;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+            padding-top: 7px;
+            box-sizing: border-box;
+
+
+            border: 5px solid #ff3939;
+            border-width: 5px 0 0 5px;
+        }
+
+        .box4 {
+            display: inline-block;
+            background-color: skyblue;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, rgb(139, 76, 245) 0%, rgb(54, 108, 242) 100%);
+            color: white;
+            border-radius: 50px;
+            border: 5px dashed #e6d6ff;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="square1">
+            <p>Hello🖐️</p>
+        </div>
+        <div class="round1">Hello👻</div>
+        <div class="round2">Hello🖖</div>
+    </div>
+    <div class="box1">
+        <p>Hello</p>
+    </div>
+    <br>
+    <div class="box2">
+        Hello
+    </div>
+    <div class="box3">
+        Hello
+    </div>
+    <br>
+    <p class="box4">
+        Hello
+    </p>
+
+
+</body>
+
+</html>

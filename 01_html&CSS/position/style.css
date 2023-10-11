@@ -1,0 +1,34 @@
+body{
+    height: 200vh;
+}
+.box{
+    width: 100px;
+      height: 100px;
+      background-color: rgb(65, 105, 225, 0.8);
+      color: white;
+}
+.relative{
+    position: relative;
+    top: 100px;
+}
+.absoulute{
+ position: absolute;   
+ top: opx;
+ left: 0;
+}
+
+.parent{
+    position: relative;
+}
+
+.fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.sticky{
+    position: sticky;
+    top: 100px;
+    left: 0;
+}

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'Pretendard-bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+} */
+
+/* reset */
+body,
+h1,
+h2,
+p,
+ul,
+button,
+input{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    font:inherit;
+    border: 0;
+}
+
+button{
+    border: 0;
+    background: none;
+    font:inherit;
+}
+button:enabled{
+    cursor: pointer;
+   font:inherit;
+}
+
+img{
+    vertical-align: top;
+}
+
+body{
+font: 'Pretendard-Regular';
+background-color:#FFFAF0 ;
+color: #5A6A72;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header img{
+    width: 156px;
+    background-size: cover;
+    padding: 22px 0;
+    margin-left: 108px;
+}
+
+.header .title{
+    margin-right: 108px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login-logo{
+    width: 250px;
+    margin: 75px auto;
+}
+.login-logo img{
+    width: 250px;
+    margin-bottom: 29px;
+}
+.login-logo> h2{
+color: #29363D;
+text-align: center;
+font-size: 24px;
+font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email, .pw{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+input{
+    width: 392px;
+height: 48px;
+    border-radius: 4px 4px 0px 0px;
+border-bottom: 1px solid #677880;
+background: #FFF;
+margin-top: 8px;
+}
+footer p{
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+margin-top: 52px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    .container {
+        width: 520px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .item-a {
+        background-color: rgb(65, 105, 225);
+
+    }
+
+    .item-b {
+        background-color: rgb(254, 215, 3);
+
+    }
+
+    .item-c {
+        background-color: rgb(105, 90, 205);
+
+    }
+
+    .item-d {
+        background-color: rgb(244, 164, 97);
+
+    }
+
+    .item-e {
+        background-color: rgb(250, 129, 114);
+
+    }
+
+    .item-f {
+        background-color: rgb(46, 139, 88);
+
+    }
+
+    .container div {
+        flex-basis: 0;
+    }
+
+    [class^=item] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: 6px solid #fff;
+        /* box-sizing: border-box; */
+    }
+
+    .con1 {
+        display: flex;
+        flex-grow: 3;
+        gap: 10px;
+    }
+
+    .con1 .con1-1 {
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .con1-1 .item-a {
+        flex-grow: 2;
+    }
+
+    .con1-1 .con1-1-1 {
+        flex-grow: 1;
+    }
+
+    .con1-1-1 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .con1-1-1 .item-b {
+        flex-grow: 2;
+    }
+
+    .con1-1-1 .item-c {
+        flex-grow: 1;
+    }
+
+    .con1 .item-d {
+        flex-grow: 2;
+    }
+
+    .con2 {
+        display: flex;
+        flex-grow: 2;
+        gap: 10px;
+    }
+
+    .con2 .item-e {
+        flex-grow: 200;
+    }
+
+    .con2 .item-f {
+        flex-grow: 310;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="con1">
+            <div class="con1-1">
+                <div class="item-a">a</div>
+                <dic class="con1-1-1">
+                    <div class="item-b">b</div>
+                    <div class="item-c">c</div>
+                </dic>
+            </div>
+            <div class="item-d">d</div>
+        </div>
+        <div class="con2">
+            <div class="item-e">e</div>
+            <div class="item-f">f</div>
+        </div>
+    </div>
+</body>
+
+</html>
